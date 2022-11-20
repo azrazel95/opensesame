@@ -1,9 +1,10 @@
+/* presentational setting! */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
+/* sizes the contents of the page */
 html,
 body,
 .wrapper {
@@ -11,25 +12,25 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/* gives general rules for the styling of the body, so text and the background colour */
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
-
+/* targets the div element wrapping around the card */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
-
+/* targets the header */
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
+/* targets the entire card */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -41,7 +42,7 @@ header {
   max-width: 800px;
   padding: 30px 40px;
 }
-
+/* this targets the "generate a password" header section */
 .card-header::after {
   content: " ";
   display: block;
@@ -49,11 +50,11 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
-
+/* this targets the area where the password output is */
 .card-body {
   min-height: 100px;
 }
-
+/* this targets the button area */
 .card-footer {
   text-align: center;
 }
@@ -71,7 +72,7 @@ header {
   display: block;
   clear: both;
 }
-
+/* this targets the "generate Password" button */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -96,7 +97,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+/* this targets the textbox that outputs the password */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -117,7 +118,7 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
-
+/* media queries! */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;

@@ -2,7 +2,8 @@
 ## a random password generator
 
 The purpose of this website is to generate a password according to requirements given by user input through prompts.
-## screenshots
+## Visit the Website
+[click me!](https://azrazel95.github.io/opensesame/)
 ![the website](./assets/pwg-1.png)
 the website before input.
 ![an example of a prompt](./assets/pwg-2.png)
