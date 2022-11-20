@@ -1,22 +1,30 @@
+<!-- basic settings -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- page title -->
     <title>Password Generator</title>
+    <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- wrapper for css presentation purposes -->
     <div class="wrapper">
       <header>
+        <!-- the header of the page -->
         <h1>Password Generator</h1>
       </header>
+      <!-- css wrapper for the card -->
       <div class="card">
         <div class="card-header">
+          <!--the generate a password text heading the card -->
           <h2>Generate a Password</h2>
         </div>
         <div class="card-body">
+          <!-- textarea for javascript to output to, readonly meaning it cannot be altered by the user -->
           <textarea
             readonly
             id="password"
@@ -24,11 +32,14 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+        <!-- footer of the card containing the button -->
         <div class="card-footer">
+          <!-- the button -->
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
     </div>
+    <!-- javascript link! -->
     <script src="script.js"></script>
   </body>
 </html>
