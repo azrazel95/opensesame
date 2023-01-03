@@ -18,16 +18,15 @@ function writePassword() {
 function generatePassword() {
   var password = "";
   //this starts our initial prompt
-  var passwordLength = prompt("How long would you like your Password to be? Please select a Number larger than 8 and smaller than 128.");
-    // these are our alerts for unexpected parameters, alongside a recursive loop so we dont have to restart the process
-    if (passwordLength > 128) {
-    alert("Please enter a Number smaller than 128, but larger than 8.");
-      generatePassword();
-    }
-    else if (passwordLength < 8) {
+  var passwordLength = 0;
+  // use a while loop to ask for the password length until a valid value is entered
+  while (passwordLength < 8 || passwordLength > 128) {
+    passwordLength = prompt("How long would you like your Password to be? Please select a Number larger than 8 and smaller than 128.");
+    if (passwordLength < 8 || passwordLength > 128) {
       alert("Please enter a Number smaller than 128, but larger than 8.");
-      generatePassword();
-    };
+    }
+  }
+   
     //these are our input parameter confirms
     var capitalConfirm = confirm("Would you like capital letters included?");
     var lowerCaseConfirm = confirm("Would you like lower case letters included?");
